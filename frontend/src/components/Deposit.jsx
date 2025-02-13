@@ -18,7 +18,7 @@ const Deposit = ({ userId, fetchBalance }) => {
       setLoading(true);
       setMessage("");
 
-      const response = await axios.post("http://localhost:5000/api/accounts/deposit", {
+      const response = await axios.post("https://bankingsystem-zapd.onrender.com/api/accounts/deposit", {
         userId,
         amount: Number(amount),
       });

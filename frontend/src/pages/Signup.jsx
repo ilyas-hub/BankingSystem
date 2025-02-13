@@ -27,7 +27,7 @@ const Signup = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:5000/api/users/signup",
+        "https://bankingsystem-zapd.onrender.com/api/users/signup",
         form,
         {
           withCredentials: true,

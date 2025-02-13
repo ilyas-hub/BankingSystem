@@ -19,7 +19,7 @@ const Withdraw = ({ userId, fetchBalance }) => {
       setMessage("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/accounts/withdraw",
+        "https://bankingsystem-zapd.onrender.com/api/accounts/withdraw",
         {
           userId,
           amount: Number(amount),

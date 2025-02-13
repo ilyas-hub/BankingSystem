@@ -11,7 +11,7 @@ const BankerDashboard = () => {
     const fetchCustomers = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/getCustomers`,
+          `https://bankingsystem-zapd.onrender.com/api/users/getCustomers`,
           {
             withCredentials: true,
           }

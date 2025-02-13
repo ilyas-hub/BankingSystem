@@ -12,7 +12,7 @@ const CreateAccount = ({ userId, onSuccess }) => {
       setMessage("");
 
       const response = await axios.post(
-        `http://localhost:5000/api/accounts/create`,
+        `https://bankingsystem-zapd.onrender.com/api/accounts/create`,
         { userId }
       );
 

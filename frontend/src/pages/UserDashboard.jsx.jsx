@@ -19,7 +19,7 @@ const UserDashboard = () => {
     const fetchAccount = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/accounts/${userId}`
+          `https://bankingsystem-zapd.onrender.com/api/accounts/${userId}`
         );
 
         if (res.data.success && res.data.account) {
@@ -45,7 +45,7 @@ const UserDashboard = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/accounts/${userId}`
+        `https://bankingsystem-zapd.onrender.com/api/accounts/${userId}`
       );
       setBalance(response.data.account?.balance || 0);
     } catch (error) {
